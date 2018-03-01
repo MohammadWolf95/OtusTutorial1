@@ -15,7 +15,7 @@ add_executable(test_main_exe test_main.cpp)
 set_target_properties(exe1 test_main_exe PROPERTIES
 	CXX_STANDARD 14
 	CXX_STANDARD_REQUIRED ON
-	COMPILE_OPTIONS -Wpedantic -Wall - Wextra
+	COMPILE_OPTIONS -Wpedantic -Wall -Wextra
 )
 
 set_target_properties(test_main_exe PROPERTIES
