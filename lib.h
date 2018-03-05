@@ -1,3 +1,3 @@
 #include "version.h"
 
-int version();
+int patch_version();
