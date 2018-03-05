@@ -10,5 +10,6 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - curl -T HelloWorld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -umohammadwolf95:$BINTRAY_API_KEY "https://api.bintray.com/mohammadwolf95/HelloOtus/HelloWorld/$TRAVIS_BUILD_NUMBER/pool/main/h/HelloWorld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
-  #- curl -T HelloWorld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -umohammadwolf95:$BINTRAY_API_KEY "https://dl.bintray.com/mohammadwolf95/HelloOtus/$TRAVIS_BUILD_NUMBER/HelloWorld-0.0.$TRAVIS_BUILD_NUMBER-Liux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
+  - curl -T HelloWorld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -umohammadwolf95:$BINTRAY_API_KEY "https://api.bintray.com/content/mohammadwolf95/HelloOtus/$TRAVIS_BUILD_NUMBER/HelloWorld-0.0.$TRAVIS_BUILD_NUMBER-Liux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
+  #2v - curl -T HelloWorld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -umohammadwolf95:$BINTRAY_API_KEY "https://api.bintray.com/mohammadwolf95/HelloOtus/HelloWorld/$TRAVIS_BUILD_NUMBER/pool/main/h/HelloWorld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
+  #1v - curl -T HelloWorld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -umohammadwolf95:$BINTRAY_API_KEY "https://dl.bintray.com/mohammadwolf95/HelloOtus/$TRAVIS_BUILD_NUMBER/HelloWorld-0.0.$TRAVIS_BUILD_NUMBER-Liux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
